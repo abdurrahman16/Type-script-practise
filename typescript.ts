@@ -52,4 +52,30 @@ const names: {
     age: 12
 }
 console.log(names);
+interface player{
+    club: string,
+    name: string,
+    wife?: string,
+    salary: number,
+    isPlaying: boolean
+} 
 
+const messy:player ={
+    club: 'fcb',
+    name:'messy',
+    salary: 45000,
+    isPlaying: true
+}
+
+class Person{
+    names:string
+    constructor(names: string){
+        this.names = names;
+    }
+    getName(): string{
+        return this.names;
+    }
+} 
+
+const sam = new Person('sammuel');
+console.log(sam.names);
